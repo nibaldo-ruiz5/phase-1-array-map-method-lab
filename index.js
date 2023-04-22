@@ -1,3 +1,8 @@
+
+
+
+
+
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Constructor OO pattern?',
@@ -12,5 +17,27 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(tutorial => {
+    let words = tutorial.split(" ")
+    let capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    let capitalizedSentence = capitalizedWords.join(" ")
+    return capitalizedSentence
+  })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
